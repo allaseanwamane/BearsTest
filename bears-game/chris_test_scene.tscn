@@ -1,391 +1,263 @@
-[gd_scene load_steps=0 format=3 uid="uid://b6whcs5qen0sj"]
+[gd_scene load_steps=132 format=3 uid="uid://c6bgrjqeawd1n"]
 
 [ext_resource type="Texture2D" uid="uid://c8bjg8edto52n" path="res://chris_art/ms_paint/vampire_guy.png" id="1_prykn"]
 [ext_resource type="Texture2D" uid="uid://dq5p7jtc6jyhh" path="res://chris_art/photoshop/fish_boarder.png" id="2_prykn"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d5x1h"]
-load_path = "res://.godot/imported/black and white effect.png_43.png-6c892b597ecb69f8b286c92f8cb9f3ab.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8mm7a"]
-load_path = "res://.godot/imported/black and white effect.png_44.png-8e3431a271ac052f53696bfaf57547e9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hq1ik"]
-load_path = "res://.godot/imported/black and white effect.png_45.png-335d8496e6596bcc7db0746336dd5635.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nfk4m"]
-load_path = "res://.godot/imported/black and white effect.png_46.png-be98b94cc3c8500deef9135947523ee8.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_66tet"]
-load_path = "res://.godot/imported/black and white effect.png_47.png-38cc1032b0aa146f3721f1095caeaaed.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ycvg"]
-load_path = "res://.godot/imported/black and white effect.png_48.png-9f0bd3fd08ba00d4469ca07186e399c9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wr18j"]
-load_path = "res://.godot/imported/black and white effect.png_49.png-1843d2fc4a128395c5ce3633c03f0ece.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qwutr"]
-load_path = "res://.godot/imported/black and white effect.png_50.png-231b3d66d5758b1b8c51ce9c3ab62dc4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_671wp"]
-load_path = "res://.godot/imported/black and white effect.png_51.png-b178e17e7169ddadb83983923b9b338b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mo76n"]
-load_path = "res://.godot/imported/black and white effect.png_52.png-f0864ee9ea28f8d3c8f2d62c502e8acb.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_42l1d"]
-load_path = "res://.godot/imported/black and white effect.png_53.png-b5055286bcfc465b8ae9474903e2f983.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2jcla"]
-load_path = "res://.godot/imported/black and white effect.png_54.png-337311b1464a156d4d0839cad99beb9f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m35m6"]
-load_path = "res://.godot/imported/black and white effect.png_55.png-7fb0d1115cb0ad733a48b6a98451469c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u0ygc"]
-load_path = "res://.godot/imported/black and white effect.png_56.png-9088ceda4a98c5e7659eedbfedb8cc4f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7th4q"]
-load_path = "res://.godot/imported/black and white effect.png_57.png-2fa5e5ad9896679047d90d44a285bea8.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6jybn"]
-load_path = "res://.godot/imported/black and white effect.png_58.png-112dc3a9618bdf4a2f9b95934bf41517.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_84odl"]
-load_path = "res://.godot/imported/black and white effect.png_59.png-6ac3d037a374fcf97a1f384dd6e00420.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ak604"]
-load_path = "res://.godot/imported/black and white effect.png_60.png-7b653147a2cab11a7bafc97aa4098d5b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vimvf"]
-load_path = "res://.godot/imported/black and white effect.png_61.png-2713000f4ceb5286f210368630a01b47.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ghshe"]
-load_path = "res://.godot/imported/black and white effect.png_62.png-a563a770cdc48d83186c261818db91d3.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fv2he"]
-load_path = "res://.godot/imported/black and white effect.png_63.png-86613b4e653e8d750696abbeaef50b2d.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5smuj"]
-load_path = "res://.godot/imported/black and white effect.png_64.png-cb0a2951c313505a1a0760e4013d2211.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y5ved"]
-load_path = "res://.godot/imported/black and white effect.png_65.png-620c812f816ba63a634c3796fb4f1235.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kv3aw"]
-load_path = "res://.godot/imported/black and white effect.png_66.png-6d1565245fc0e864464ebe02a7f4c54e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o7u2a"]
-load_path = "res://.godot/imported/black and white effect.png_67.png-aa4f9b6c707c99f5665bbcdce70f54ac.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ijoax"]
-load_path = "res://.godot/imported/black and white effect.png_68.png-4d6e1b010a00dfd1f5d37d2fe096a510.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j8kkg"]
-load_path = "res://.godot/imported/black and white effect.png_69.png-1c011765666214f71b00ee4e56f3bed8.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yh4yk"]
-load_path = "res://.godot/imported/black and white effect.png_70.png-c426c12d18a4b6c0bdca90bede4aee3f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p8s74"]
-load_path = "res://.godot/imported/black and white effect.png_71.png-aab26ded4e91f9c8af32e4dc948d1367.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o4fqm"]
-load_path = "res://.godot/imported/black and white effect.png_72.png-e334ab6b82be1a82df2af56e01c5aa77.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gfmxp"]
-load_path = "res://.godot/imported/black and white effect.png_73.png-a0fbc04869dd3a7fdd9940714de1776e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1n88h"]
-load_path = "res://.godot/imported/black and white effect.png_74.png-34921b23ce6cb8a2f4e776a27548f46c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opjno"]
-load_path = "res://.godot/imported/black and white effect.png_75.png-071b094d819151654cf6362d7076174f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_meb7l"]
-load_path = "res://.godot/imported/black and white effect.png_76.png-e0d31e0a8f842b5a578bfc7d8e5644c9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w30ff"]
-load_path = "res://.godot/imported/black and white effect.png_77.png-e2ba56e52f6c10d4d5d35adb3169eb53.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xy6fp"]
-load_path = "res://.godot/imported/black and white effect.png_78.png-aeaf64cbfcc2b5e472c59a7606a6b5cc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uws2o"]
-load_path = "res://.godot/imported/black and white effect.png_79.png-842c3c9b7e6a003a2f23e180e3fc00a4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iylel"]
-load_path = "res://.godot/imported/black and white effect.png_80.png-431788d4eac96e39137721788abca280.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yj5sn"]
-load_path = "res://.godot/imported/black and white effect.png_81.png-2c0e9746b454016f9a20de1aa61e8748.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jtbqm"]
-load_path = "res://.godot/imported/black and white effect.png_82.png-9bc674614cc226ac560fc4b491af35ec.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ek5vw"]
-load_path = "res://.godot/imported/black and white effect.png_83.png-7aaf27a802f8287ad8c5f974e8ead204.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jip8q"]
-load_path = "res://.godot/imported/black and white effect.png_84.png-0fea2397bf6da2b36be7545f9e8c1ef0.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_euc68"]
-load_path = "res://.godot/imported/black and white effect.png_85.png-75ad5f24412189ffbd53a979f813b6b8.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_38t8r"]
-load_path = "res://.godot/imported/black and white effect.png_86.png-c3156a94252b1ec526100b054170f083.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jef5d"]
-load_path = "res://.godot/imported/black and white effect.png_87.png-8bb9ebbf4877c79ac5814371d26d998e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q1yuq"]
-load_path = "res://.godot/imported/black and white effect.png_88.png-ca6065498ecdd3dd10767ac0b0be1214.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uacds"]
-load_path = "res://.godot/imported/black and white effect.png_89.png-7f61543e016d4d5ec98ee5b286c4048c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y0lqw"]
-load_path = "res://.godot/imported/black and white effect.png_90.png-16070f0e21e33aecf0ee7834874e0215.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c5xsv"]
-load_path = "res://.godot/imported/black and white effect.png_91.png-7235f1853c6decc5b005907225064799.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_84x1k"]
-load_path = "res://.godot/imported/black and white effect.png_92.png-51187d05a8e536b404119ba3cf3c9824.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0hwxg"]
-load_path = "res://.godot/imported/black and white effect.png_93.png-9e9d08080427f48c85755548ee238692.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_si2mt"]
-load_path = "res://.godot/imported/black and white effect.png_94.png-02da9498d8c414524b63e637b13bf3e0.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sp30j"]
-load_path = "res://.godot/imported/black and white effect.png_95.png-314a4d0fe1c50658e94b1fcba927356f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7tmle"]
-load_path = "res://.godot/imported/black and white effect.png_96.png-0a4697af0bfb8f543b586b1522ab5955.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ya33n"]
-load_path = "res://.godot/imported/black and white effect.png_97.png-b620d7b6602313d668f67af1e5b8dd60.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3wiol"]
-load_path = "res://.godot/imported/black and white effect.png_98.png-d624c0f9082e447a19251af495d7ea0b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6a02w"]
-load_path = "res://.godot/imported/black and white effect.png_99.png-49d0c716ab15f6df3a26f6b14c6c3cf7.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_clqk1"]
-load_path = "res://.godot/imported/black and white effect.png_100.png-f30d8a3e3af2e905d3a1a13318af4bff.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fxe4o"]
-load_path = "res://.godot/imported/black and white effect.png_101.png-c2af11f9b4cbe128718565018e4f6df1.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8quq7"]
-load_path = "res://.godot/imported/black and white effect.png_102.png-ee385911868e65a38c5907d4f24b5a52.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vhc7d"]
-load_path = "res://.godot/imported/black and white effect.png_103.png-9365dfff3c5aaa99fad6a46d71b7eb23.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bqoel"]
-load_path = "res://.godot/imported/black and white effect.png_104.png-be567326ab3e652326fb8508444be406.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_id12a"]
-load_path = "res://.godot/imported/black and white effect.png_105.png-a71e3cbd21206eef91fe22be7fd8db6b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rs42p"]
-load_path = "res://.godot/imported/black and white effect.png_106.png-a6b04df7c680b63fee95af4704da0fa1.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0mwxc"]
-load_path = "res://.godot/imported/black and white effect.png_107.png-fd9c496c35d179274a63fc4a9236fa63.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vuht8"]
-load_path = "res://.godot/imported/black and white effect.png_108.png-1c37aef5825e1b51e1d4bcee0513907b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pw1oq"]
-load_path = "res://.godot/imported/black and white effect.png_109.png-65ba9b4a7852aee89bacc4294b5e08e9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gs8nl"]
-load_path = "res://.godot/imported/black and white effect.png_110.png-462cc941d78ef5bc3d6c724889f8f39a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jl0ou"]
-load_path = "res://.godot/imported/black and white effect.png_111.png-eb596651f65d9e3792e1ca8671a17d9e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2k5xf"]
-load_path = "res://.godot/imported/black and white effect.png_112.png-b1ed4ec9487e400b66ef32620e422766.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v63vh"]
-load_path = "res://.godot/imported/black and white effect.png_113.png-b75ba4460458838526db182bf2efc2b9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iiypn"]
-load_path = "res://.godot/imported/black and white effect.png_114.png-48deeace9094d590de95683be882ccfb.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iuxcr"]
-load_path = "res://.godot/imported/black and white effect.png_115.png-6c77e52af572dcc5ce3cff6e097e7398.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jl6hu"]
-load_path = "res://.godot/imported/black and white effect.png_116.png-dc099d2b58b726c875d255d13c551518.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uwk5n"]
-load_path = "res://.godot/imported/black and white effect.png_117.png-cbfaa4cdef23f69fa77bee57f062744b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fic5r"]
-load_path = "res://.godot/imported/black and white effect.png_118.png-c8ede3a90860e2ee7871104e44b873e8.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v118d"]
-load_path = "res://.godot/imported/black and white effect.png_119.png-9495772cdb6c47efa8f6d3c70fd16102.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lwncm"]
-load_path = "res://.godot/imported/black and white effect.png_120.png-e0ebd396f8cd3367e7973a10d594c5f4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o63de"]
-load_path = "res://.godot/imported/black and white effect.png_121.png-a8d81f13ef357fb274e020a65f4e4a3a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q4750"]
-load_path = "res://.godot/imported/black and white effect.png_122.png-ab6dc49a6de2dbdda62fb17677dd7893.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_30vx0"]
-load_path = "res://.godot/imported/black and white effect.png_123.png-0318cc0e85b0ddd590851aeb1fee462c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rkakh"]
-load_path = "res://.godot/imported/black and white effect.png_124.png-33f1f1bfaf76e9e1deb3a159d1998c71.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_id8vy"]
-load_path = "res://.godot/imported/black and white effect.png_125.png-95a501044717481042430971c19e2bd4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xtheg"]
-load_path = "res://.godot/imported/black and white effect.png_126.png-98ebcdfa7cdf16a87db21c4f66c20c2b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ubkm4"]
-load_path = "res://.godot/imported/black and white effect.png_127.png-5f6ada2f6a44393efceeb84fc464a6d4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o48om"]
-load_path = "res://.godot/imported/black and white effect.png_128.png-cd8f6eb6d24e4264d4761e6a46dd9805.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k2ony"]
-load_path = "res://.godot/imported/black and white effect.png_129.png-0d76e42af450dc79959bd81294ba5af5.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7y85w"]
-load_path = "res://.godot/imported/black and white effect.png_130.png-fd34d47c193be96e8e76ae40976bb3d4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ixb38"]
-load_path = "res://.godot/imported/black and white effect.png_131.png-734e2953f7c614881d7dd349a52e1659.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ldlqy"]
-load_path = "res://.godot/imported/black and white effect.png_132.png-41cbd18c2be83f20fba085b4930349c5.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l8no8"]
-load_path = "res://.godot/imported/black and white effect.png_133.png-c66ef05ce39d499bed9d3113a770f03a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3s6xx"]
-load_path = "res://.godot/imported/black and white effect.png_134.png-9deee44ed75a42ae11bae8c650907465.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bkdqi"]
-load_path = "res://.godot/imported/black and white effect.png_135.png-676e6599b76e24524526fbe52bc0192d.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s2ody"]
-load_path = "res://.godot/imported/black and white effect.png_136.png-fe858ac82c16098fc4fb5bb7a70d0f6e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vafvb"]
-load_path = "res://.godot/imported/black and white effect.png_137.png-f14169f290bc981795fe58dde7878927.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j53bq"]
-load_path = "res://.godot/imported/black and white effect.png_138.png-c3e98748f9fd403e7868ea3282db1800.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_05sqr"]
-load_path = "res://.godot/imported/black and white effect.png_139.png-4264d285aed2fef7fdffa9564df6c46a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ym5p0"]
-load_path = "res://.godot/imported/black and white effect.png_140.png-e374fc924d16478c15404c6246296cdb.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_82rj2"]
-load_path = "res://.godot/imported/black and white effect.png_141.png-f9e054a7f621e3072838dc576cfa71f5.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_76in0"]
-load_path = "res://.godot/imported/black and white effect.png_142.png-2336a04ad45cb214f2cc471a64218544.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1b22m"]
-load_path = "res://.godot/imported/black and white effect.png_143.png-c517196b34b4b8e3623c62d73b57fbcb.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l76vu"]
-load_path = "res://.godot/imported/black and white effect.png_144.png-28dca88f77c419c370d9e8b47eba7c90.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_36qg2"]
-load_path = "res://.godot/imported/black and white effect.png_145.png-bcf17daad6d5d5b0f40ae012d0ff27ef.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mmq7y"]
-load_path = "res://.godot/imported/black and white effect.png_146.png-9f781165ee6b2148f2adf49ffd2cdc5e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ix15y"]
-load_path = "res://.godot/imported/black and white effect.png_147.png-5356bd9ca2e8492e24181b1e537ef132.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l3hih"]
-load_path = "res://.godot/imported/black and white effect.png_148.png-4302fed9dcc4c2ed9b6f07ff3d3fe784.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xevt3"]
-load_path = "res://.godot/imported/black and white effect.png_149.png-d6238b94179cedf8c61467213a32d973.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_im3ns"]
-load_path = "res://.godot/imported/black and white effect.png_150.png-35f854dbc56866c6742a4776d6d6bcff.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2jqx2"]
-load_path = "res://.godot/imported/black and white effect.png_151.png-9295eed2218f407c5aea413de573321a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gv8l5"]
-load_path = "res://.godot/imported/black and white effect.png_152.png-276ccd6fb9ed48a1d4876cf5e77e9b5f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8jixl"]
-load_path = "res://.godot/imported/black and white effect.png_153.png-0ddbe6f52a2418e456e5549861e5dd5c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wmw63"]
-load_path = "res://.godot/imported/black and white effect.png_154.png-9ebb18fbaa6b8199799c71f205e36624.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uush8"]
-load_path = "res://.godot/imported/black and white effect.png_155.png-a8e082c07cf24ade8aaa21f400500903.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dftep"]
-load_path = "res://.godot/imported/black and white effect.png_156.png-87fc256bcafd4cc404ce0c07bb1bcb1c.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_77al4"]
-load_path = "res://.godot/imported/black and white effect.png_157.png-2b7ef8d16b89669564cb62bee6670379.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8g87k"]
-load_path = "res://.godot/imported/black and white effect.png_158.png-40af1b95f14c6fe347ad2e4c2540f046.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2umrp"]
-load_path = "res://.godot/imported/black and white effect.png_159.png-a2205179a3b9c01de66f427616f67de6.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cqe75"]
-load_path = "res://.godot/imported/black and white effect.png_160.png-d1b8ee156af5a397ff57a442dd043d34.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_evxhs"]
-load_path = "res://.godot/imported/black and white effect.png_161.png-8a63bd7160ed0e814e63069bc51e0a5a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gmgvx"]
-load_path = "res://.godot/imported/black and white effect.png_162.png-3efca48e63ba05e55e03556a5afb7a7b.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ubwhq"]
-load_path = "res://.godot/imported/black and white effect.png_163.png-77241bce2ce4f62b01a1e69b8c114021.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ly7qr"]
-load_path = "res://.godot/imported/black and white effect.png_164.png-6f82a7c1ac1ee8c8eb770e2e7e952123.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ggmy"]
-load_path = "res://.godot/imported/black and white effect.png_165.png-f2a91201a243a78cdef1e2a45aebcfb4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tnorr"]
-load_path = "res://.godot/imported/black and white effect.png_166.png-c5372f10493950ef7aa2abeb538e9465.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0dwp6"]
-load_path = "res://.godot/imported/black and white effect.png_167.png-ab925197b2b55112d58a9a8c52fd9cf3.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4kqa1"]
-load_path = "res://.godot/imported/black and white effect.png_168.png-b4c2a9100359c2f46c428c4238a0114a.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5v6ep"]
-load_path = "res://.godot/imported/black and white effect.png_169.png-5fd91ca7497bb5fee4276574c0945e49.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ude2c"]
-load_path = "res://.godot/imported/black and white effect.png_170.png-f2eb193ee3cba8479e96f931a311ebc4.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
@@ -774,24 +646,24 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("CompressedTexture2D_ude2c")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 60.0
 }]
 
-[node name="MainScene" type="Node2D" unique_id=1670500351]
+[node name="MainScene" type="Node2D"]
 
-[node name="DrawingVampireDude" type="Sprite2D" parent="." unique_id=816815177]
+[node name="DrawingVampireDude" type="Sprite2D" parent="."]
 position = Vector2(-458.00003, 429.00003)
 scale = Vector2(1.3787879, 1.3787879)
 texture = ExtResource("1_prykn")
 
-[node name="Fishboarder(1)" type="Sprite2D" parent="." unique_id=783843110]
+[node name="Fishboarder(1)" type="Sprite2D" parent="."]
 position = Vector2(-884, 448.00003)
 scale = Vector2(0.18402775, 0.18402773)
 texture = ExtResource("2_prykn")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=654233251]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-751, 168)
 scale = Vector2(5.045, 5.045)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
