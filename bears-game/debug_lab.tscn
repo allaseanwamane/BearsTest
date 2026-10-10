@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://jcljhb50cv33"]
+
+[node name="DebugLab" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
