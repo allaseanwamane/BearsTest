@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b6whcs5qen0sj"]
+[gd_scene load_steps=0 format=3 uid="uid://b6whcs5qen0sj"]
 
 [ext_resource type="Texture2D" uid="uid://c8bjg8edto52n" path="res://chris_art/ms_paint/vampire_guy.png" id="1_prykn"]
 [ext_resource type="Texture2D" uid="uid://dq5p7jtc6jyhh" path="res://chris_art/photoshop/fish_boarder.png" id="2_prykn"]
