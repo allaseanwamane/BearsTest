@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=4 uid="uid://dptbwk6n02u3u"]
 
 [ext_resource type="Script" path="res://main_scene.gd" id="1_gyfs4"]
-[ext_resource type="TileSet" path="res://tilesets/overworld.tres" id="2_d5x1h"]
-[ext_resource type="Texture2D" path="res://tilesets/objects.png" id="3_8mm7a"]
+[ext_resource type="TileSet" uid="uid://b7gesl4q6w4uf" path="res://tilesets/overworld.tres" id="2_d5x1h"]
+[ext_resource type="Texture2D" uid="uid://csk6xe38sh1ao" path="res://tilesets/objects.png" id="3_8mm7a"]
 [ext_resource type="Script" path="res://friend.gd" id="4_d5x1h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
