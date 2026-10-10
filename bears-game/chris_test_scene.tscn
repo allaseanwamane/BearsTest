@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6whcs5qen0sj"]
 
-[ext_resource type="Texture2D" uid="uid://c8bjg8edto52n" path="res://chris_art/ms_paint/drawing vampire dude.png" id="1_2c62f"]
-[ext_resource type="Texture2D" uid="uid://dq5p7jtc6jyhh" path="res://chris_art/photoshop/Fishboarder(1).png" id="2_gyfs4"]
+[ext_resource type="Texture2D" uid="uid://c8bjg8edto52n" path="res://chris_art/ms_paint/vampire_guy.png" id="1_prykn"]
+[ext_resource type="Texture2D" uid="uid://dq5p7jtc6jyhh" path="res://chris_art/photoshop/fish_boarder.png" id="2_prykn"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d5x1h"]
 load_path = "res://.godot/imported/black and white effect.png_43.png-6c892b597ecb69f8b286c92f8cb9f3ab.ctex"
@@ -784,15 +784,15 @@ animations = [{
 [node name="DrawingVampireDude" type="Sprite2D" parent="." unique_id=816815177]
 position = Vector2(-458.00003, 429.00003)
 scale = Vector2(1.3787879, 1.3787879)
-texture = ExtResource("1_2c62f")
+texture = ExtResource("1_prykn")
 
 [node name="Fishboarder(1)" type="Sprite2D" parent="." unique_id=783843110]
 position = Vector2(-884, 448.00003)
 scale = Vector2(0.18402775, 0.18402773)
-texture = ExtResource("2_gyfs4")
+texture = ExtResource("2_prykn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=654233251]
 position = Vector2(-751, 168)
 scale = Vector2(5.045, 5.045)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
-frame_progress = 0.7726759
+frame_progress = 0.7768235

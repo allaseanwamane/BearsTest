@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq5p7jtc6jyhh"
-path="res://.godot/imported/Fishboarder(1).png-1cff614fc861c27192bd805867acba61.ctex"
+path="res://.godot/imported/fish_boarder.png-a1aa612f0aeafa5d6816d225b6531ea6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://chris_art/photoshop/Fishboarder(1).png"
-dest_files=["res://.godot/imported/Fishboarder(1).png-1cff614fc861c27192bd805867acba61.ctex"]
+source_file="res://chris_art/photoshop/fish_boarder.png"
+dest_files=["res://.godot/imported/fish_boarder.png-a1aa612f0aeafa5d6816d225b6531ea6.ctex"]
 
 [params]
 

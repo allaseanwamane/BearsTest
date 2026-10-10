@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8bjg8edto52n"
-path="res://.godot/imported/drawing vampire dude.png-2e517b1451a420b2097bb85911fb6b0c.ctex"
+path="res://.godot/imported/vampire_guy.png-9f34c0590837611868c23de0d2ee6190.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://chris_art/ms_paint/drawing vampire dude.png"
-dest_files=["res://.godot/imported/drawing vampire dude.png-2e517b1451a420b2097bb85911fb6b0c.ctex"]
+source_file="res://chris_art/ms_paint/vampire_guy.png"
+dest_files=["res://.godot/imported/vampire_guy.png-9f34c0590837611868c23de0d2ee6190.ctex"]
 
 [params]
 
