@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://jcljhb50cv33"]
+
+[ext_resource type="Texture2D" uid="uid://byql8ko1xclcy" path="res://chris_art/aesprite/lemony.png" id="1_wj3iv"]
+[ext_resource type="Texture2D" uid="uid://cfpialnvva23m" path="res://chris_art/aesprite/small greeny.png" id="2_j188j"]
+[ext_resource type="PackedScene" uid="uid://wbeoipjwjbwt" path="res://scenes/player_character.tscn" id="3_t6syg"]
+[ext_resource type="Texture2D" uid="uid://b2olmd12inia4" path="res://chris_art/aesprite/pointing arrow animation-SheeORANGEt.png" id="5_8i6cy"]
+[ext_resource type="Texture2D" uid="uid://dh7lsrck0xies" path="res://chris_art/aesprite/Fisherman export.png" id="6_qtjr4"]
+[ext_resource type="Texture2D" uid="uid://dxcw1tubhvhpl" path="res://chris_art/aesprite/mouth door.png" id="7_pc5xw"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4pl5c"]
+blend_mode = 2
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_bexgx"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4pl5c"]
+gradient = SubResource("Gradient_bexgx")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxjh5"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(0, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5qqe"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(10, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rjkg"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(20, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pxxg"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(30, 0, 10, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxjh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5qqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rjkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pxxg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(28, 25)
+
+[node name="DebugLab" type="Node2D" unique_id=1896972943]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1385813306]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=788541133]
+zoom = Vector2(2, 2)
+
+[node name="Lemony" type="Sprite2D" parent="." unique_id=1710874478]
+light_mask = 7
+position = Vector2(91, 5)
+texture = ExtResource("1_wj3iv")
+
+[node name="Lemony2" type="Sprite2D" parent="Lemony" unique_id=523381937]
+modulate = Color(0, 1, 0.8980392, 1)
+show_behind_parent = true
+visibility_layer = 4
+material = SubResource("CanvasItemMaterial_4pl5c")
+position = Vector2(2, 0)
+texture = ExtResource("1_wj3iv")
+
+[node name="SmallGreeny" type="Sprite2D" parent="." unique_id=846850588]
+position = Vector2(12, -104)
+scale = Vector2(4.28125, 3.1875)
+texture = ExtResource("2_j188j")
+
+[node name="LightTest" type="PointLight2D" parent="." unique_id=976378186]
+position = Vector2(17.000002, -99.20754)
+scale = Vector2(0.17913473, 47.584904)
+color = Color(0.73900884, 0.087171905, 3.85046e-07, 1)
+energy = 2.35
+shadow_enabled = true
+texture = SubResource("GradientTexture1D_4pl5c")
+
+[node name="playerCharacter" parent="." unique_id=1036655183 instance=ExtResource("3_t6syg")]
+
+[node name="Pointer" type="AnimatedSprite2D" parent="." unique_id=1564677312]
+position = Vector2(90, -10)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+frame_progress = 0.33534333
+
+[node name="FishermanExport" type="Sprite2D" parent="." unique_id=542573348]
+position = Vector2(-69, -38)
+scale = Vector2(0.6066177, 0.6066177)
+texture = ExtResource("6_qtjr4")
+
+[node name="MouthDoor" type="Sprite2D" parent="." unique_id=26481730]
+position = Vector2(-69, -17)
+texture = ExtResource("7_pc5xw")
+
+[node name="Area2D" type="Area2D" parent="MouthDoor" unique_id=2060100667]
+position = Vector2(0, 3.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MouthDoor/Area2D" unique_id=1587010432]
+shape = SubResource("RectangleShape2D_yf5fn")
