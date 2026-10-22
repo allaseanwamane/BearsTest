@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://75vsnocid27t"]
+
+[ext_resource type="Script" uid="uid://ct45os1yk4ymx" path="res://scenes/path_follow_2d.gd" id="1_b2nm7"]
+[ext_resource type="Texture2D" uid="uid://h23ed760agic" path="res://icon.svg" id="2_ndto5"]
+
+[sub_resource type="Curve2D" id="Curve2D_nv61g"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 325, 123, 0, 0, 0, 0, 325, 256, 0, 0, 0, 0, 426, 257, 0, 0, 0, 0, 424, 122, 0, 0, 0, 0, 325, 123)
+}
+point_count = 5
+
+[node name="Path2D" type="Path2D" unique_id=345552900]
+curve = SubResource("Curve2D_nv61g")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=353525041]
+position = Vector2(325, 123)
+rotation = 1.5707964
+rotates = false
+script = ExtResource("1_b2nm7")
+
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D" unique_id=1963526146]
+position = Vector2(-0.007932663, -0.99997044)
+rotation = -1.5787326
+scale = Vector2(0.10023938, 0.10023938)
+texture = ExtResource("2_ndto5")

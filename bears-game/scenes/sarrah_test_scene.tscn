@@ -5,8 +5,7 @@
 [ext_resource type="Script" uid="uid://jq81txguijba" path="res://scenes/lemony.gd" id="3_d5ilo"]
 [ext_resource type="Texture2D" uid="uid://byql8ko1xclcy" path="res://chris_art/aesprite/lemony.png" id="4_3g7hc"]
 [ext_resource type="PackedScene" uid="uid://wbeoipjwjbwt" path="res://scenes/player_character.tscn" id="5_d5ilo"]
-[ext_resource type="Script" uid="uid://ct45os1yk4ymx" path="res://scenes/path_follow_2d.gd" id="6_3g7hc"]
-[ext_resource type="Texture2D" uid="uid://h23ed760agic" path="res://icon.svg" id="7_gmyvp"]
+[ext_resource type="PackedScene" uid="uid://75vsnocid27t" path="res://scenes/path_2d.tscn" id="6_aiax0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
 texture = ExtResource("2_d5ilo")
@@ -348,12 +347,6 @@ sources/0 = SubResource("TileSetAtlasSource_hq1ik")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_asphf"]
 size = Vector2(16, 20)
 
-[sub_resource type="Curve2D" id="Curve2D_nv61g"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 325, 123, 0, 0, 0, 0, 325, 256, 0, 0, 0, 0, 426, 257, 0, 0, 0, 0, 424, 122, 0, 0, 0, 0, 325, 123)
-}
-point_count = 5
-
 [node name="Main" type="Node2D" unique_id=11552675]
 
 [node name="Tiles" type="Node2D" parent="." unique_id=213120513]
@@ -397,20 +390,7 @@ motion_mode = 1
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1478919091]
 position = Vector2(301, 229)
 
-[node name="Path2D" type="Path2D" parent="." unique_id=1151345014]
+[node name="Path2D" parent="." unique_id=345552900 instance=ExtResource("6_aiax0")]
 position = Vector2(0, -5)
-curve = SubResource("Curve2D_nv61g")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=639487561]
-position = Vector2(325, 123)
-rotation = 1.5707964
-rotates = false
-script = ExtResource("6_3g7hc")
-
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=113579438]
-position = Vector2(-0.007932663, -0.99997044)
-rotation = -1.5787326
-scale = Vector2(0.10023938, 0.10023938)
-texture = ExtResource("7_gmyvp")
 
 [connection signal="timeout" from="Friends/Lemony/LemonyTimer" to="Friends/Lemony" method="_on_lemony_timer_timeout"]
