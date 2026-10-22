@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://wbeoipjwjbwt"]
+[gd_scene format=3 uid="uid://wbeoipjwjbwt"]
 
 [ext_resource type="Script" uid="uid://bjhm2ps6om1sq" path="res://scripts/character_body_2d.gd" id="1_6r27q"]
 [ext_resource type="Texture2D" uid="uid://bjvvps05bh3hk" path="res://chris_art/free_game_art_org/Tiny16-ExpandedFemaleSprites.png" id="2_kww55"]
@@ -121,7 +121,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bexgx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"DefaultDown",
 "speed": 5.0
 }, {
@@ -129,7 +129,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6ck57")
 }],
-"loop": true,
+"loop": 1,
 "name": &"DefaultSides",
 "speed": 5.0
 }, {
@@ -137,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lanqs")
 }],
-"loop": true,
+"loop": 1,
 "name": &"DefaultUp",
 "speed": 5.0
 }, {
@@ -148,7 +148,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qpapy")
 }],
-"loop": true,
+"loop": 1,
 "name": &"WalkCycleDown",
 "speed": 5.0
 }, {
@@ -159,7 +159,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ylsvv")
 }],
-"loop": true,
+"loop": 1,
 "name": &"WalkCycleSides",
 "speed": 5.0
 }, {
@@ -170,7 +170,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8lyfe")
 }],
-"loop": true,
+"loop": 1,
 "name": &"WalkCycleUp",
 "speed": 5.0
 }, {
@@ -259,25 +259,25 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ky65s")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(12, 16)
+size = Vector2(12, 14)
 
-[node name="PlayerCharacter" type="CharacterBody2D"]
+[node name="PlayerCharacter" type="CharacterBody2D" unique_id=1588103396]
 script = ExtResource("1_6r27q")
 
-[node name="PlayerSprites" type="AnimatedSprite2D" parent="."]
+[node name="PlayerSprites" type="AnimatedSprite2D" parent="." unique_id=1648703566]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"WalkCycleUp"
 frame_progress = 0.6806875
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=62057087]
 shape = SubResource("RectangleShape2D_g4v7s")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=940016993]
 scale = Vector2(0.25, 0.25)
 zoom = Vector2(4, 4)
