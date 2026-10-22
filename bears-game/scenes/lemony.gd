@@ -1,16 +1,19 @@
 extends CharacterBody2D
 var change = 0
-var x = 0
-var y = 1
 
 
 func _physics_process(delta: float) -> void:
-	velocity = Vector2(x, y) * 50
 	move_and_slide()
-	
 
 
 func _on_lemony_timer_timeout() -> void:
-	change += 90
-	x = sin(deg_to_rad(change + 180))
-	y = sin(deg_to_rad(change + 90))
+	$LemonyTimer.stop()
+	var x = randi_range(-1, 1)
+	var y = randi_range(-1, 1)
+	velocity = Vector2(x * 10, y * 10)
+	move_and_slide()
+	await get_tree().create_timer(2, false).timeout
+	velocity = Vector2(0, 0)
+	$LemonyTimer.wait_time = randf_range(5, 10)
+	$LemonyTimer.start()
+	

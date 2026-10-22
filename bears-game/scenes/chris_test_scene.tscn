@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b6whcs5qen0sj"]
+[gd_scene load_steps=128 format=3 uid="uid://b6whcs5qen0sj"]
 
 [ext_resource type="Texture2D" uid="uid://c8bjg8edto52n" path="res://chris_art/ms_paint/vampire_guy.png" id="1_prykn"]
 [ext_resource type="Texture2D" uid="uid://dq5p7jtc6jyhh" path="res://chris_art/photoshop/fish_boarder.png" id="2_prykn"]
@@ -499,30 +499,30 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("125_i5khk")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 60.0
 }]
 
-[node name="MainScene" type="Node2D" unique_id=1341663176]
+[node name="MainScene" type="Node2D"]
 
-[node name="DrawingVampireDude" type="Sprite2D" parent="." unique_id=520208248]
+[node name="DrawingVampireDude" type="Sprite2D" parent="."]
 position = Vector2(-458.00003, 429.00003)
 scale = Vector2(1.3787879, 1.3787879)
 texture = ExtResource("1_prykn")
 
-[node name="Fishboarder(1)" type="Sprite2D" parent="." unique_id=632266778]
+[node name="Fishboarder(1)" type="Sprite2D" parent="."]
 position = Vector2(-884, 448.00003)
 scale = Vector2(0.18402775, 0.18402773)
 texture = ExtResource("2_prykn")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=741311687]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-751, 168)
 scale = Vector2(5.045, 5.045)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 frame_progress = 0.4277471
 
-[node name="Lemony" type="Sprite2D" parent="." unique_id=1197572298]
+[node name="Lemony" type="Sprite2D" parent="."]
 position = Vector2(-204.5, 352.96875)
 scale = Vector2(9.1875, 9.1875)
 texture = ExtResource("126_x2xo1")
