@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://b7gesl4q6w4uf"]
+[gd_resource type="TileSet" format=3 uid="uid://b7gesl4q6w4uf"]
 
 [ext_resource type="Texture2D" uid="uid://dcpa0ikacxes5" path="res://tilesets/Overworld.png" id="1_7ymm5"]
 

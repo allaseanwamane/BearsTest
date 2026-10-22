@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dsojtxi34p7ms"]
+
+[ext_resource type="Texture2D" uid="uid://dxcw1tubhvhpl" path="res://chris_art/aesprite/mouth door.png" id="1_oy0os"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(28, 25)
+
+[node name="DoorArea2D" type="Area2D" unique_id=875829293]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1543625426]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="MouthDoor" type="Sprite2D" parent="." unique_id=1400472985]
+position = Vector2(0, -3.5)
+texture = ExtResource("1_oy0os")
