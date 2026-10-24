@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://dptbwk6n02u3u"]
+[gd_scene format=4 uid="uid://dptbwk6n02u3u"]
 
 [ext_resource type="TileSet" uid="uid://b7gesl4q6w4uf" path="res://tilesets/overworld.tres" id="1_asphf"]
 [ext_resource type="Texture2D" uid="uid://csk6xe38sh1ao" path="res://tilesets/objects.png" id="2_d5ilo"]
