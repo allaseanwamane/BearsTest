@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dtjde5id4vyum"]
+
+[ext_resource type="PackedScene" uid="uid://wbeoipjwjbwt" path="res://scenes/player_character.tscn" id="1_g2pb3"]
+[ext_resource type="PackedScene" uid="uid://dsojtxi34p7ms" path="res://scenes/mouth_door.tscn" id="2_k0bjg"]
+
+[node name="DebugLabRoom2" type="Node2D" unique_id=1569084129]
+
+[node name="playerCharacter" parent="." unique_id=878210404 instance=ExtResource("1_g2pb3")]
+position = Vector2(59, 24)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=639388260]
+zoom = Vector2(3, 3)
+
+[node name="DoorArea2D" parent="." unique_id=875829293 instance=ExtResource("2_k0bjg")]
+position = Vector2(98, 45)
+
+[connection signal="body_entered" from="DoorArea2D" to="playerCharacter" method="_on_door_area_2d_body_entered"]

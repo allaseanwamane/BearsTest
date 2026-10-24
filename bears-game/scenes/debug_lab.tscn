@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://jcljhb50cv33"]
+
+[ext_resource type="Texture2D" uid="uid://byql8ko1xclcy" path="res://chris_art/aesprite/lemony.png" id="1_wj3iv"]
+[ext_resource type="Texture2D" uid="uid://cfpialnvva23m" path="res://chris_art/aesprite/small greeny.png" id="2_j188j"]
+[ext_resource type="PackedScene" uid="uid://wbeoipjwjbwt" path="res://scenes/player_character.tscn" id="3_t6syg"]
+[ext_resource type="Texture2D" uid="uid://b2olmd12inia4" path="res://chris_art/aesprite/pointing arrow animation-SheeORANGEt.png" id="5_8i6cy"]
+[ext_resource type="Texture2D" uid="uid://dh7lsrck0xies" path="res://chris_art/aesprite/Fisherman export.png" id="6_qtjr4"]
+[ext_resource type="PackedScene" uid="uid://dsojtxi34p7ms" path="res://scenes/mouth_door.tscn" id="6_t6syg"]
+[ext_resource type="Texture2D" uid="uid://ci7s45y8yhu68" path="res://chris_art/free_game_art_org/fishing rod.png" id="7_wj3iv"]
+[ext_resource type="Texture2D" uid="uid://ceqnqei6hmvtu" path="res://chris_art/aesprite/fishing bob.png" id="8_j188j"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4pl5c"]
+blend_mode = 2
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_bexgx"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4pl5c"]
+gradient = SubResource("Gradient_bexgx")
+
+[sub_resource type="Gradient" id="Gradient_wj3iv"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.44705883, 0.20392157, 0.05882353, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yf5fn"]
+gradient = SubResource("Gradient_wj3iv")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxjh5"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(0, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5qqe"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(10, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rjkg"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(20, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pxxg"]
+atlas = ExtResource("5_8i6cy")
+region = Rect2(30, 0, 10, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxjh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5qqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rjkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pxxg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_t6syg"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.047058824, 0.73333335, 0.827451, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g4v7s"]
+gradient = SubResource("Gradient_t6syg")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(71.85928, 84)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
+size = Vector2(69, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
+size = Vector2(69, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(18, 14)
+
+[node name="DebugLab" type="Node2D" unique_id=1896972943]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1385813306]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=873751299]
+zoom = Vector2(2, 2)
+
+[node name="Lemony" type="Sprite2D" parent="." unique_id=1710874478]
+light_mask = 7
+position = Vector2(91, 5)
+texture = ExtResource("1_wj3iv")
+
+[node name="Lemony2" type="Sprite2D" parent="Lemony" unique_id=523381937]
+modulate = Color(0, 1, 0.8980392, 1)
+show_behind_parent = true
+visibility_layer = 4
+material = SubResource("CanvasItemMaterial_4pl5c")
+position = Vector2(2, 0)
+texture = ExtResource("1_wj3iv")
+
+[node name="SmallGreeny" type="Sprite2D" parent="." unique_id=846850588]
+position = Vector2(12, -104)
+scale = Vector2(4.28125, 3.1875)
+texture = ExtResource("2_j188j")
+
+[node name="LightTest" type="PointLight2D" parent="." unique_id=976378186]
+position = Vector2(17.000002, -99.20754)
+scale = Vector2(0.17913473, 47.584904)
+color = Color(0.73900884, 0.087171905, 3.85046e-07, 1)
+energy = 2.35
+shadow_enabled = true
+texture = SubResource("GradientTexture1D_4pl5c")
+
+[node name="Dock" type="Sprite2D" parent="." unique_id=253812044]
+z_index = -1
+position = Vector2(-144.5, 61.000008)
+scale = Vector2(0.26953128, 16.125002)
+texture = SubResource("GradientTexture1D_yf5fn")
+
+[node name="playerCharacter" parent="." unique_id=1036655183 node_paths=PackedStringArray("fishing_rod", "fishing_bob") instance=ExtResource("3_t6syg")]
+fishing_rod = NodePath("../FishingRod")
+fishing_bob = NodePath("../FishingBob")
+
+[node name="Pointer" type="AnimatedSprite2D" parent="." unique_id=1564677312]
+position = Vector2(90, -10)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+frame_progress = 0.33534333
+
+[node name="Water" type="Sprite2D" parent="." unique_id=1753290757]
+z_index = -2
+position = Vector2(-209.5, 41)
+scale = Vector2(0.7773437, 82.999985)
+texture = SubResource("GradientTexture1D_g4v7s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Water" unique_id=1745508578]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Water/StaticBody2D" unique_id=1425546226]
+position = Vector2(-44.381897, 0)
+scale = Vector2(2.327273, 0.012048195)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Water/StaticBody2D" unique_id=128389190]
+position = Vector2(47.709106, -0.18072292)
+scale = Vector2(2.327273, 0.012048195)
+shape = SubResource("RectangleShape2D_d0u6y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Water/StaticBody2D" unique_id=490296425]
+position = Vector2(47.709106, 0.42168683)
+scale = Vector2(2.327273, 0.012048195)
+shape = SubResource("RectangleShape2D_3gngh")
+
+[node name="FishermanExport" type="Sprite2D" parent="." unique_id=542573348]
+position = Vector2(-98, 30)
+scale = Vector2(0.6066177, 0.6066177)
+texture = ExtResource("6_qtjr4")
+
+[node name="mouth_door" parent="." unique_id=875829293 instance=ExtResource("6_t6syg")]
+position = Vector2(-69, -13.5)
+
+[node name="fishing area" type="Area2D" parent="." unique_id=509818326]
+position = Vector2(-95, 59)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fishing area" unique_id=1591774573]
+position = Vector2(-74, 2)
+shape = SubResource("RectangleShape2D_g4v7s")
+debug_color = Color(0, 0, 0, 0.41960785)
+
+[node name="FishingRod" type="Sprite2D" parent="." unique_id=1519062191]
+visible = false
+position = Vector2(-184.75002, 59.27344)
+scale = Vector2(0.38281238, 0.3708495)
+texture = ExtResource("7_wj3iv")
+flip_h = true
+
+[node name="FishingBob" type="Sprite2D" parent="." unique_id=1496458657]
+visible = false
+position = Vector2(-181, 61)
+texture = ExtResource("8_j188j")
+
+[connection signal="body_entered" from="mouth_door" to="playerCharacter" method="_on_mouth_door_body_entered"]
+[connection signal="body_entered" from="fishing area" to="playerCharacter" method="_on_fishing_area_body_entered"]
+[connection signal="body_exited" from="fishing area" to="playerCharacter" method="_on_fishing_area_body_exited"]
